@@ -11,14 +11,25 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var myTableView: UITableView!
+    
+    var myCollege = ["Notre Dame", "Elmhurst College", "Standford"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        myTableView.delegate = self
+        myTableView.dataSource = self
+        
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return myCollege.count
     }
-
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let myCell = myTableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath)
+        myCell.textLabel?.text = myCollege[indexPath.row]
+        
+        return myCell
+    }
 
 }
 
