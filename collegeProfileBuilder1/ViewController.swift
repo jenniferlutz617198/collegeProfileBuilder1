@@ -31,6 +31,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return currentCell
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let NVC = segue.destinationViewController as! DetailsViewController
+        let currentCollege = myCollege[(myTableView.indexPathForSelectedRow?.row)!]
+        NVC.currentCollege = currentCollege
+    }
+    
     
 
 }
