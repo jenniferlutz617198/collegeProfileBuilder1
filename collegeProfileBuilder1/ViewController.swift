@@ -25,11 +25,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let myCell = myTableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath)
-        myCell.textLabel?.text = myCollege[indexPath.row]
-        
-        return myCell
+        let currentCell = myTableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath)
+        let currentCollege = myCollege[indexPath.row]
+        currentCell.textLabel!.text = currentCollege
+        return currentCell
     }
+    
+    
 
 }
 
