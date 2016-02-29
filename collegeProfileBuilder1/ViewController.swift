@@ -11,29 +11,31 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var myTableView: UITableView!
-    
-    var myCollege = ["Notre Dame", "Elmhurst College", "Standford"]
+    var collegeArray:[College] = [College]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myTableView.delegate = self
-        myTableView.dataSource = self
-        
+        let collegeZero = College(Name: "Notre Dame", location: "South Bend, Indiana", numberOfStudents: 12000)
+        collegeArray.append(collegeZero)
+        let collegeOne = College(Name: "University Wisonsin - Whitewater", location: "Whitewater, WI", numberOfStudents: 11000)
+        collegeArray.append(collegeOne)
+        let collegeTwo = College(Name: "Harper", location: "Palatine, IL", numberOfStudents: 15000)
+        collegeArray.append(collegeTwo)
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myCollege.count
+        return collegeArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let currentCell = myTableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath)
-        let currentCollege = myCollege[indexPath.row]
-        currentCell.textLabel!.text = currentCollege
+        let currentCollege = collegeArray[indexPath.row]
+        currentCell.textLabel!.text = currentCollege.name
         return currentCell
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let NVC = segue.destinationViewController as! DetailsViewController
-        let currentCollege = myCollege[(myTableView.indexPathForSelectedRow?.row)!]
+        let currentCollege = collegeArray[(myTableView.indexPathForSelectedRow?.row)!]
         NVC.currentCollege = currentCollege
     }
     
