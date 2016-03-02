@@ -12,9 +12,9 @@ class College
 {
     var name: String
     var location: String
-    var numberOfStudents: Int
+    var numberOfStudents: String
     
-    init(Name n: String,location l: String,numberOfStudents s: Int)
+    init(Name n: String,location l: String,numberOfStudents s: String)
     {
         name = n
         location = l
@@ -25,6 +25,6 @@ class College
     {
         name = ""
         location = ""
-        numberOfStudents = 0
+        numberOfStudents = ""
     }
 }

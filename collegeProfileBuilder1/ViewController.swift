@@ -15,11 +15,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let collegeZero = College(Name: "Notre Dame", location: "South Bend, Indiana", numberOfStudents: 12000)
+        let collegeZero = College(Name: "Notre Dame", location: "South Bend, Indiana", numberOfStudents: "12000")
         collegeArray.append(collegeZero)
-        let collegeOne = College(Name: "University Wisonsin - Whitewater", location: "Whitewater, WI", numberOfStudents: 11000)
+        let collegeOne = College(Name: "University Wisonsin - Whitewater", location: "Whitewater, WI", numberOfStudents: "1100")
         collegeArray.append(collegeOne)
-        let collegeTwo = College(Name: "Harper", location: "Palatine, IL", numberOfStudents: 15000)
+        let collegeTwo = College(Name: "Harper", location: "Palatine, IL", numberOfStudents: "10000")
         collegeArray.append(collegeTwo)
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,8 +35,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let NVC = segue.destinationViewController as! DetailsViewController
-        let currentCollege = collegeArray[(myTableView.indexPathForSelectedRow?.row)!]
-        NVC.currentCollege = currentCollege
+        let currentRow = myTableView.indexPathForSelectedRow?.row
+        NVC.newCollege = collegeArray[currentRow!]
     }
     
     

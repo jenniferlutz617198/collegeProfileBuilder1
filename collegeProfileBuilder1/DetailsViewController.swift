@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-    var currentCollege = College()
+    var newCollege = College()
 
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var locationTextField: UITextField!
@@ -17,16 +17,15 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = currentCollege.name
-        nameTextField.text = ""
-        numberOfStudentsTextField.text = ""
-        locationTextField.text = ""
+        nameTextField.text = newCollege.name
+        locationTextField.text = newCollege.location
+        numberOfStudentsTextField.text = newCollege.numberOfStudents
+        var logoImage = UIImage(named: "logo")
         
         
         
     }
-    
-    var imageView = UIImage()
+
     
     
 
