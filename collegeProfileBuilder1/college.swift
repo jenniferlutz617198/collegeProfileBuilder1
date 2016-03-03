@@ -13,12 +13,14 @@ class College
     var name: String
     var location: String
     var numberOfStudents: String
+    var image: String
     
-    init(Name n: String,location l: String,numberOfStudents s: String)
+    init(Name n: String,location l: String,numberOfStudents s: String, image i: String)
     {
         name = n
         location = l
         numberOfStudents = s
+        image = i
     }
     
     init()
@@ -26,5 +28,6 @@ class College
         name = ""
         location = ""
         numberOfStudents = ""
+        image = ""
     }
 }

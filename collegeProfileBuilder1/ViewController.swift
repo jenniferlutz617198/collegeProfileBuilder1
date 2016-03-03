@@ -15,11 +15,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let collegeZero = College(Name: "Notre Dame", location: "South Bend, Indiana", numberOfStudents: "12000")
+        let collegeZero = College(Name: "Notre Dame", location: "South Bend, Indiana", numberOfStudents: "12000", image: "")
         collegeArray.append(collegeZero)
-        let collegeOne = College(Name: "University Wisonsin - Whitewater", location: "Whitewater, WI", numberOfStudents: "1100")
+        let collegeOne = College(Name: "University Wisonsin - Whitewater", location: "Whitewater, WI", numberOfStudents: "1100", image: "")
         collegeArray.append(collegeOne)
-        let collegeTwo = College(Name: "Harper", location: "Palatine, IL", numberOfStudents: "10000")
+        let collegeTwo = College(Name: "Harper", location: "Palatine, IL", numberOfStudents: "10000", image: "")
         collegeArray.append(collegeTwo)
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

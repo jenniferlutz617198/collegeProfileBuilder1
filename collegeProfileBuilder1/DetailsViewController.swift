@@ -10,7 +10,9 @@ import UIKit
 
 class DetailsViewController: UIViewController {
     var newCollege = College()
-
+    
+    var isImage: Bool?
+    
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var numberOfStudentsTextField: UITextField!
@@ -20,14 +22,15 @@ class DetailsViewController: UIViewController {
         nameTextField.text = newCollege.name
         locationTextField.text = newCollege.location
         numberOfStudentsTextField.text = newCollege.numberOfStudents
-        var logoImage = UIImage(named: "logo")
+        
+        
         
         
         
     }
 
     
-    
+
 
     
     
