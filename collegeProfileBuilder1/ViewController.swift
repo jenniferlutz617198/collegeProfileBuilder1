@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  collegeProfileBuilder1
 //
-//  Created by student3 on 2/24/16.
+//  Created by Jennifer Lutz on 2/24/16.
 //  Copyright © 2016 JohnHerseyHighSchool. All rights reserved.
 //
 
@@ -15,11 +15,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let collegeZero = College(Name: "Notre Dame", location: "South Bend, Indiana", numberOfStudents: "12000", image: "")
+        let collegeZero = College(Name: "Notre Dame", location: "South Bend, Indiana", numberOfStudents: "12000", image: "notreDameImage")
         collegeArray.append(collegeZero)
-        let collegeOne = College(Name: "University Wisonsin - Whitewater", location: "Whitewater, WI", numberOfStudents: "1100", image: "")
+        let collegeOne = College(Name: "University Wisonsin - Whitewater", location: "Whitewater, WI", numberOfStudents: "1100", image: "whiteWaterImage")
         collegeArray.append(collegeOne)
-        let collegeTwo = College(Name: "Harper", location: "Palatine, IL", numberOfStudents: "10000", image: "")
+        let collegeTwo = College(Name: "Harper", location: "Palatine, IL", numberOfStudents: "10000", image: "haperCollegeImage")
         collegeArray.append(collegeTwo)
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

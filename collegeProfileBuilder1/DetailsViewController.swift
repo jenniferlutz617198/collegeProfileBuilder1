@@ -22,6 +22,9 @@ class DetailsViewController: UIViewController {
         nameTextField.text = newCollege.name
         locationTextField.text = newCollege.location
         numberOfStudentsTextField.text = newCollege.numberOfStudents
+        logoImageView.image = UIImage(named: newCollege.image)
+        
+        
         
         
         
