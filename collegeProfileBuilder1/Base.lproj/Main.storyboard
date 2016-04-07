@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kBo-CA-tmo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kBo-CA-tmo">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -68,16 +69,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fMV-qH-kIp">
-                                <rect key="frame" x="20" y="113" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="gIo-OK-XhT" id="C3U-yK-agQ"/>
-                                </connections>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LHs-b4-eeD">
-                                <rect key="frame" x="20" y="285" width="97" height="30"/>
+                                <rect key="frame" x="179" y="172" width="114" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -85,7 +78,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nGU-AK-wCp">
-                                <rect key="frame" x="20" y="462" width="97" height="30"/>
+                                <rect key="frame" x="160" y="234" width="146" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -93,26 +86,59 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number Of Students" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juc-vm-ceh">
-                                <rect key="frame" x="20" y="244" width="163" height="33"/>
+                                <rect key="frame" x="163" y="142" width="163" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6Q-6F-k15">
-                                <rect key="frame" x="20" y="432" width="94" height="22"/>
+                                <rect key="frame" x="199" y="210" width="94" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKt-Bd-hAb">
-                                <rect key="frame" x="20" y="81" width="80" height="24"/>
+                                <rect key="frame" x="218" y="72" width="80" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zjc-sg-0xA">
-                                <rect key="frame" x="131" y="312" width="240" height="128"/>
+                                <rect key="frame" x="126" y="372" width="240" height="128"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fMV-qH-kIp">
+                                <rect key="frame" x="110" y="104" width="284" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gIo-OK-XhT" id="C3U-yK-agQ"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKZ-Rp-z1b">
+                                <rect key="frame" x="198" y="272" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t4R-vv-TLC">
+                                <rect key="frame" x="160" y="296" width="145" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFa-jF-TX0">
+                                <rect key="frame" x="203" y="334" width="59" height="30"/>
+                                <state key="normal" title="website"/>
+                                <connections>
+                                    <segue destination="LOf-RF-b2b" kind="presentation" id="3RQ-Ul-I96"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdh-JZ-iih">
+                                <rect key="frame" x="190" y="524" width="108" height="47"/>
+                                <state key="normal" title="choose Image"/>
+                                <connections>
+                                    <action selector="onChooseButtonPressed:" destination="gIo-OK-XhT" eventType="touchUpInside" id="QPh-2f-Dn6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -121,11 +147,63 @@
                         <outlet property="logoImageView" destination="Zjc-sg-0xA" id="7CP-aV-pTM"/>
                         <outlet property="nameTextField" destination="fMV-qH-kIp" id="k4X-D8-Q1Z"/>
                         <outlet property="numberOfStudentsTextField" destination="LHs-b4-eeD" id="6DG-Ia-Dgd"/>
+                        <outlet property="websiteTextField" destination="t4R-vv-TLC" id="Mah-2W-8Hr"/>
+                        <outlet property="webstieButton" destination="JFa-jF-TX0" id="ZeQ-Et-66e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ZL-i1-Lwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1864" y="340"/>
+        </scene>
+        <!--College Webpage View Controller-->
+        <scene sceneID="7Wz-hS-lrv">
+            <objects>
+                <viewController id="LOf-RF-b2b" customClass="collegeWebpageViewController" customModule="collegeProfileBuilder1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bVv-Bx-coa"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dll-ij-xYN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n25-0H-yvP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9A-WM-NP7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ws5-GW-GzO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="Os3-Ti-2Fv">
+                                        <barButtonItem key="leftBarButtonItem" title="Dismiss" id="HSz-AE-sEF">
+                                            <connections>
+                                                <action selector="dismissBarButton:" destination="LOf-RF-b2b" id="RF8-ge-5ks"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="FYn-mg-Hoc">
+                                <rect key="frame" x="100" y="12" width="20" height="20"/>
+                                <color key="color" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e9A-WM-NP7" firstAttribute="top" secondItem="n25-0H-yvP" secondAttribute="topMargin" id="75A-zY-8s1"/>
+                            <constraint firstItem="Dll-ij-xYN" firstAttribute="top" secondItem="e9A-WM-NP7" secondAttribute="bottom" id="7ub-8x-tms"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e9A-WM-NP7" secondAttribute="trailing" constant="-20" id="ecz-Mh-lgy"/>
+                            <constraint firstItem="e9A-WM-NP7" firstAttribute="leading" secondItem="n25-0H-yvP" secondAttribute="leadingMargin" constant="-20" id="xXP-PI-KMk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collegeWebpageWebView" destination="e9A-WM-NP7" id="uhr-cS-coy"/>
+                        <outlet property="loadingIndicator" destination="FYn-mg-Hoc" id="ac2-9T-p8Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Rx-2O-SBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2501" y="340"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wdM-lJ-ySb">

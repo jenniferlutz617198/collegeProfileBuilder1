@@ -15,11 +15,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let collegeZero = College(Name: "Notre Dame", location: "South Bend, Indiana", numberOfStudents: "12000", image: "")
+        let collegeZero = College(Name: "Notre Dame", location: "South Bend, Indiana", numberOfStudents: "12000", image: "notreDameImage",webpage: "www.nd.edu/")
         collegeArray.append(collegeZero)
-        let collegeOne = College(Name: "University Wisonsin - Whitewater", location: "Whitewater, WI", numberOfStudents: "1100", image: "")
+        let collegeOne = College(Name: "University Wisonsin - Whitewater", location: "Whitewater, WI", numberOfStudents: "1100", image: "whiteWaterImage", webpage: "www.uww.edu/")
         collegeArray.append(collegeOne)
-        let collegeTwo = College(Name: "Harper", location: "Palatine, IL", numberOfStudents: "10000", image: "")
+        let collegeTwo = College(Name: "Harper", location: "Palatine, IL", numberOfStudents: "10000", image: "haperCollegeImage", webpage: "goforward.harpercollege.edu")
         collegeArray.append(collegeTwo)
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,7 +31,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let currentCollege = collegeArray[indexPath.row]
         currentCell.textLabel!.text = currentCollege.name
         return currentCell
-    }
+    
+       }
+
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let NVC = segue.destinationViewController as! DetailsViewController
