@@ -52,6 +52,9 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
         let NVC = segue.destinationViewController as! collegeWebpageViewController
         NVC.website = newCollege.webpage
         
+        let mapViewController = segue.destinationViewController as! mapViewController
+        mapViewController.
+        
     }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         var chooseImage = UIImage()
@@ -60,6 +63,7 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
             self.logoImageView.image = chooseImage
             
         }
+
     }
     
     
@@ -76,4 +80,6 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
         presentViewController(actionsheet, animated: true, completion: nil)
         
     }
+    
 }
+

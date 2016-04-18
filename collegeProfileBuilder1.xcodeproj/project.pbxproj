@@ -16,6 +16,7 @@
 		D77797921C7E4C530033E512 /* collegeProfileBuilder1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77797911C7E4C530033E512 /* collegeProfileBuilder1UITests.swift */; };
 		D77EC0461C80E9BE000412EA /* college.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77EC0451C80E9BE000412EA /* college.swift */; };
 		D77EC0481C80EE8F000412EA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77EC0471C80EE8F000412EA /* DetailsViewController.swift */; };
+		D7B5D7491CC17C3400AE9E6C /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5D7481CC17C3400AE9E6C /* mapViewController.swift */; };
 		D7FDD0191C9B3AE5009FE027 /* collegeWebpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FDD0181C9B3AE5009FE027 /* collegeWebpageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		D77797931C7E4C530033E512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D77EC0451C80E9BE000412EA /* college.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = college.swift; sourceTree = "<group>"; };
 		D77EC0471C80EE8F000412EA /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		D7B5D7481CC17C3400AE9E6C /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		D7FDD0181C9B3AE5009FE027 /* collegeWebpageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collegeWebpageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				D77797711C7E4C530033E512 /* AppDelegate.swift */,
 				D77797731C7E4C530033E512 /* ViewController.swift */,
 				D77797751C7E4C530033E512 /* Main.storyboard */,
+				D7B5D7481CC17C3400AE9E6C /* mapViewController.swift */,
 				D7FDD0181C9B3AE5009FE027 /* collegeWebpageViewController.swift */,
 				D77EC0471C80EE8F000412EA /* DetailsViewController.swift */,
 				D77797781C7E4C530033E512 /* Assets.xcassets */,
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					D777976D1C7E4C530033E512 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = BWYT76Q3DS;
 					};
 					D77797811C7E4C530033E512 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -268,6 +272,7 @@
 				D77797741C7E4C530033E512 /* ViewController.swift in Sources */,
 				D77EC0461C80E9BE000412EA /* college.swift in Sources */,
 				D7FDD0191C9B3AE5009FE027 /* collegeWebpageViewController.swift in Sources */,
+				D7B5D7491CC17C3400AE9E6C /* mapViewController.swift in Sources */,
 				D77797721C7E4C530033E512 /* AppDelegate.swift in Sources */,
 				D77EC0481C80EE8F000412EA /* DetailsViewController.swift in Sources */,
 			);
@@ -411,7 +416,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = collegeProfileBuilder1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JHHS.collegeProfileBuilder1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +429,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = collegeProfileBuilder1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JHHS.collegeProfileBuilder1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
