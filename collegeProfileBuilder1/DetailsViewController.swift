@@ -52,9 +52,10 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
         let NVC = segue.destinationViewController as! collegeWebpageViewController
         NVC.website = newCollege.webpage
         
-        let mapViewController = segue.destinationViewController as! mapViewController
-        mapViewController.
-        
+        prepareForSegue(UIStoryboardSegue, sender: AnyObject?)
+        let NVC = segue.destinationViewController as! mapViewController
+        NVC.location = newCollege.location
+    
     }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         var chooseImage = UIImage()

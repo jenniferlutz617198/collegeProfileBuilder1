@@ -8,7 +8,6 @@
 
 import UIKit
 import MapKit
-import CoreLocation
 
 class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 @IBOutlet weak var myMapView: MKMapView!
@@ -17,6 +16,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         myMapView.delegate = self
         var collegeLocation = String()
         let locationManager = CLLocationManager()
+
         
     }
     

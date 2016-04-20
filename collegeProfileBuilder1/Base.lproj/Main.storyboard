@@ -129,7 +129,7 @@
                                 <rect key="frame" x="72" y="555" width="59" height="30"/>
                                 <state key="normal" title="website"/>
                                 <connections>
-                                    <segue destination="LOf-RF-b2b" kind="presentation" id="3RQ-Ul-I96"/>
+                                    <segue destination="LOf-RF-b2b" kind="presentation" identifier="websiteSegue" id="3RQ-Ul-I96"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdh-JZ-iih">
@@ -143,7 +143,7 @@
                                 <rect key="frame" x="197" y="207" width="117" height="31"/>
                                 <state key="normal" title="See on the map"/>
                                 <connections>
-                                    <segue destination="H8Y-97-KuQ" kind="show" id="vUV-zJ-b1E"/>
+                                    <segue destination="H8Y-97-KuQ" kind="show" identifier="locationSegue" id="vUV-zJ-b1E"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -152,6 +152,7 @@
                     <connections>
                         <outlet property="locationTextField" destination="nGU-AK-wCp" id="llR-ZW-KY0"/>
                         <outlet property="logoImageView" destination="Zjc-sg-0xA" id="7CP-aV-pTM"/>
+                        <outlet property="mapViewButton" destination="Yzp-c4-OYE" id="Ghq-yQ-kRO"/>
                         <outlet property="nameTextField" destination="fMV-qH-kIp" id="k4X-D8-Q1Z"/>
                         <outlet property="numberOfStudentsTextField" destination="LHs-b4-eeD" id="6DG-Ia-Dgd"/>
                         <outlet property="websiteTextField" destination="t4R-vv-TLC" id="Mah-2W-8Hr"/>
