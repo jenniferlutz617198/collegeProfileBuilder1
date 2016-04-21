@@ -14,8 +14,13 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     override func viewDidLoad() {
         super.viewDidLoad()
         myMapView.delegate = self
+        let span = MKCoordinateSpanMake(1.0, 1.0)
+        let region = MKCoordinateRegionMake(<#T##centerCoordinate: CLLocationCoordinate2D##CLLocationCoordinate2D#>, <#T##span: MKCoordinateSpan##MKCoordinateSpan#>)
         var collegeLocation = String()
         let locationManager = CLLocationManager()
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = 
+        annotation.title = "
 
         
     }

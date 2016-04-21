@@ -10,7 +10,7 @@ import UIKit
 
 class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    
+    var collegeLocatin = String()
     var newCollege = College()
     var website = String()
     var picker = UIImagePickerController()
@@ -41,6 +41,15 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     
     
+    @IBAction func onCollegeLocationPressed(sender: UIButton) {
+        let actionsheet = UIAlertController(title: "Click to see location on map", message: nil, preferredStyle: .ActionSheet)
+        actionsheet.popoverPresentationController?.sourceView = self.view
+        actionsheet.popoverPresentationController?.sourceRect = CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.width, height: 100)
+        let locationButton = UIAlertAction(title: "Go to location", style: .Default) { (action) -> Void in
+        }
+        actionsheet.addAction(locationButton)
+        presentViewController(actionsheet, animated: true, completion: nil)
+    }
     
     
     
@@ -49,13 +58,8 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let NVC = segue.destinationViewController as! collegeWebpageViewController
-        NVC.website = newCollege.webpage
         
-        prepareForSegue(UIStoryboardSegue, sender: AnyObject?)
-        let NVC = segue.destinationViewController as! mapViewController
-        NVC.location = newCollege.location
-    
+        
     }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         var chooseImage = UIImage()
@@ -64,7 +68,12 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
             self.logoImageView.image = chooseImage
             
         }
+        if segue.identifier == "websiteSegue"
+        {
+            let NVC = segue.destinationViewController as! collegeWebpageViewController
+            NVC.website = newCollege.webpage
 
+        }
     }
     
     
@@ -79,7 +88,6 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
         }
         actionsheet.addAction(librarybutton)
         presentViewController(actionsheet, animated: true, completion: nil)
-        
     }
     
 }

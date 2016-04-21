@@ -143,6 +143,7 @@
                                 <rect key="frame" x="197" y="207" width="117" height="31"/>
                                 <state key="normal" title="See on the map"/>
                                 <connections>
+                                    <action selector="onCollegeLocationPressed:" destination="gIo-OK-XhT" eventType="touchUpInside" id="cYw-W0-k5J"/>
                                     <segue destination="H8Y-97-KuQ" kind="show" identifier="locationSegue" id="vUV-zJ-b1E"/>
                                 </connections>
                             </button>
@@ -155,6 +156,8 @@
                         <outlet property="mapViewButton" destination="Yzp-c4-OYE" id="Ghq-yQ-kRO"/>
                         <outlet property="nameTextField" destination="fMV-qH-kIp" id="k4X-D8-Q1Z"/>
                         <outlet property="numberOfStudentsTextField" destination="LHs-b4-eeD" id="6DG-Ia-Dgd"/>
+                        <outlet property="onLocationButtonPressed" destination="Yzp-c4-OYE" id="b2w-on-jxX"/>
+                        <outlet property="onMapLocationButtonPressed" destination="Yzp-c4-OYE" id="2gp-QJ-woS"/>
                         <outlet property="websiteTextField" destination="t4R-vv-TLC" id="Mah-2W-8Hr"/>
                         <outlet property="webstieButton" destination="JFa-jF-TX0" id="ZeQ-Et-66e"/>
                     </connections>
