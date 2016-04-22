@@ -10,7 +10,7 @@ import UIKit
 
 class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    var collegeLocatin = String()
+    var collegeLocation = String()
     var newCollege = College()
     var website = String()
     var picker = UIImagePickerController()
@@ -34,11 +34,11 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
         websiteTextField.text = newCollege.webpage
         self.picker.delegate = self
         
-        
-        
     }
+
     
     
+
     
     
     @IBAction func onCollegeLocationPressed(sender: UIButton) {
@@ -55,12 +55,8 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     
     
-    
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        
-    }
+
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         var chooseImage = UIImage()
         self.picker.dismissViewControllerAnimated(true) { () -> Void in
@@ -68,12 +64,7 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
             self.logoImageView.image = chooseImage
             
         }
-        if segue.identifier == "websiteSegue"
-        {
-            let NVC = segue.destinationViewController as! collegeWebpageViewController
-            NVC.website = newCollege.webpage
-
-        }
+        
     }
     
     
@@ -90,5 +81,7 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
         presentViewController(actionsheet, animated: true, completion: nil)
     }
     
+    
+
 }
 
