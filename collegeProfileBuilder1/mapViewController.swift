@@ -15,11 +15,6 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         super.viewDidLoad()
         myMapView.delegate = self
         var location = String()
-        geocodeLocation(location)
-        var collegeLocationsArray: [CLPlacemark]!
-    }
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        <#code#>
     }
     
 }

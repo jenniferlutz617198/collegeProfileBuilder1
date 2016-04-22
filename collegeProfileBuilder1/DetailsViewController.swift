@@ -54,7 +54,6 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     
     
-    
         
 
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
@@ -79,9 +78,23 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
         }
         actionsheet.addAction(librarybutton)
         presentViewController(actionsheet, animated: true, completion: nil)
+        if segue.identifier == "webisteSegue"
+        {
+            let NVC = segue.destinationViewController as! collegeWebpageViewController
+            NVC.if segue.identifer == "websiteSegue"
+            {
+                let NVC = segue.destinationViewerController as! collegeWebpageViewController
+                NVC.website = newCollege.webpage
+                
+            }
+            else if segue.identifier == "locationSegue"
+            {
+                let NVC = segue.destinationViewerController as! mapViewController
+                NVC.collegeLocation = newCollege.location
+            }
+
+        }
     }
     
-    
-
-}
+   }
 
