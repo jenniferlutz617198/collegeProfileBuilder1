@@ -16,7 +16,6 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
     var picker = UIImagePickerController()
     var chooseImage = UIImage()
     
-    
     var isImage: Bool?
     
     @IBOutlet weak var webstieButton: UIButton!
@@ -45,14 +44,21 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     
     
-    
-    
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let NVC = segue.destinationViewController as! collegeWebpageViewController
-        NVC.website = newCollege.webpage
+        if segue.identifier == "webSegue"
+        {
+            let NVC = segue.destinationViewController as! collegeWebpageViewController
+            NVC.website = newCollege.webpage
+            
+
+        }
+        else if
+        {
+            let NVC = segue.identifier == "mapSegue"
+            NVC.collegeLocation = newCollege.location
+        }
         
-    }
+
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         var chooseImage = UIImage()
         self.picker.dismissViewControllerAnimated(true) { () -> Void in

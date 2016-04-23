@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kBo-CA-tmo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kBo-CA-tmo">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -129,7 +129,7 @@
                                 <rect key="frame" x="203" y="334" width="59" height="30"/>
                                 <state key="normal" title="website"/>
                                 <connections>
-                                    <segue destination="LOf-RF-b2b" kind="presentation" id="3RQ-Ul-I96"/>
+                                    <segue destination="LOf-RF-b2b" kind="presentation" identifier="webSegue" id="3RQ-Ul-I96"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdh-JZ-iih">
@@ -137,6 +137,13 @@
                                 <state key="normal" title="choose Image"/>
                                 <connections>
                                     <action selector="onChooseButtonPressed:" destination="gIo-OK-XhT" eventType="touchUpInside" id="QPh-2f-Dn6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaT-CO-3uh">
+                                <rect key="frame" x="497" y="263" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="ffa-Dg-QgC" kind="show" identifier="mapSegue" id="dVR-JV-TMZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -183,10 +190,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="FYn-mg-Hoc">
-                                <rect key="frame" x="100" y="12" width="20" height="20"/>
-                                <color key="color" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -198,12 +201,43 @@
                     </view>
                     <connections>
                         <outlet property="collegeWebpageWebView" destination="e9A-WM-NP7" id="uhr-cS-coy"/>
-                        <outlet property="loadingIndicator" destination="FYn-mg-Hoc" id="ac2-9T-p8Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Rx-2O-SBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2501" y="340"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="7cs-YD-nru">
+            <objects>
+                <viewController id="ffa-Dg-QgC" customClass="MapViewController" customModule="collegeProfileBuilder1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mhj-7n-Q2W"/>
+                        <viewControllerLayoutGuide type="bottom" id="s1P-zU-M7h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gTB-Wz-8wt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Oqg-Z6-Eu9">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Oqg-Z6-Eu9" firstAttribute="top" secondItem="Mhj-7n-Q2W" secondAttribute="bottom" id="K79-tk-Ns0"/>
+                            <constraint firstItem="s1P-zU-M7h" firstAttribute="top" secondItem="Oqg-Z6-Eu9" secondAttribute="bottom" id="Ruz-F7-6TG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Oqg-Z6-Eu9" secondAttribute="trailing" constant="-20" id="har-Xj-eXV"/>
+                            <constraint firstItem="Oqg-Z6-Eu9" firstAttribute="leading" secondItem="gTB-Wz-8wt" secondAttribute="leadingMargin" constant="-20" id="j4c-rT-geU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myMapView" destination="Oqg-Z6-Eu9" id="yzx-sf-MHk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0MV-zL-rwa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3177" y="340"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wdM-lJ-ySb">

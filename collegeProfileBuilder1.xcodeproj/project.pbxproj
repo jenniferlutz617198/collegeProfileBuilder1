@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4065AB0A1CCB145400B7F085 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4065AB091CCB145400B7F085 /* MapViewController.swift */; };
 		D77797721C7E4C530033E512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77797711C7E4C530033E512 /* AppDelegate.swift */; };
 		D77797741C7E4C530033E512 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77797731C7E4C530033E512 /* ViewController.swift */; };
 		D77797771C7E4C530033E512 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77797751C7E4C530033E512 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4065AB091CCB145400B7F085 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		D777976E1C7E4C530033E512 /* collegeProfileBuilder1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = collegeProfileBuilder1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77797711C7E4C530033E512 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77797731C7E4C530033E512 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				D77797751C7E4C530033E512 /* Main.storyboard */,
 				D7FDD0181C9B3AE5009FE027 /* collegeWebpageViewController.swift */,
 				D77EC0471C80EE8F000412EA /* DetailsViewController.swift */,
+				4065AB091CCB145400B7F085 /* MapViewController.swift */,
 				D77797781C7E4C530033E512 /* Assets.xcassets */,
 				D777977A1C7E4C530033E512 /* LaunchScreen.storyboard */,
 				D777977D1C7E4C530033E512 /* Info.plist */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D77797741C7E4C530033E512 /* ViewController.swift in Sources */,
+				4065AB0A1CCB145400B7F085 /* MapViewController.swift in Sources */,
 				D77EC0461C80E9BE000412EA /* college.swift in Sources */,
 				D7FDD0191C9B3AE5009FE027 /* collegeWebpageViewController.swift in Sources */,
 				D77797721C7E4C530033E512 /* AppDelegate.swift in Sources */,
