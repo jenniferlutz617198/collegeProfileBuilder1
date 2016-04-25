@@ -22,13 +22,14 @@ class MapViewController: UIViewController, UIActionSheetDelegate {
             for place in arrayOfPlacemarks! {
                 print(place)
             }
-            
         }
-        func actionSheet(actionSheet: UIActionSheet, 
+        
     }
-    
-    
 
-
+    func createActionSheet(placemark: [CLPlacemark]) {
+        var actionsheet = UIActionSheet(title: "locations", delegate: self, cancelButtonTitle: "cancel", destructiveButtonTitle: nil)
+        actionsheet.addButtonWithTitle(
+        actionsheet.showInView(view)
+    }
     
 }

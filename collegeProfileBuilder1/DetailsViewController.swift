@@ -34,7 +34,6 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
         self.picker.delegate = self
         
         
-        
     }
     
     
